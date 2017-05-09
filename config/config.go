@@ -136,6 +136,7 @@ type CheckPlugin struct {
 	NotificationInterval *int32
 	CheckInterval        *int32
 	MaxCheckAttempts     *int32
+	DisableAutoClose     bool
 }
 
 func (pconf *PluginConfig) buildCheckPlugin() (*CheckPlugin, error) {
